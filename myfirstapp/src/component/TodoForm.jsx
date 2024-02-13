@@ -22,6 +22,7 @@ return(
   <h1
   style={{
     color:"white",
+    textDecoration:"underline",
   } }>My resume</h1>
 
 
@@ -30,7 +31,7 @@ return(
   style={{
       display:"block",
       width:"100%",
-      marginTop:"2rem",
+      marginTop:"1rem",
       
       
   }
@@ -38,7 +39,7 @@ return(
   }>
 
   </input>
-  <input type="text" name="nm" defaultValue="name : "
+  <input type="text" name="nm" defaultValue="email: "
   style={{
       display:"block",
       width:"100%",
@@ -54,7 +55,11 @@ return(
 </form>
 
 {todo.map((Element,index) => (
-<div key={index}>
+<div key={index} 
+style={{
+  color:"white",
+  marginTop:"0.5rem",
+}}>
 {Element.name} {Element.priority}
 </div>
 
